@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Bookshy</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Harry Potter and the Philosopher's Stone</h2><br>
+            <h3>J. K. Rowling</h3><br>
+            <p style="text-align: justify;">This inspiring novel follows a young shepherd named Santiago on his journey to find a hidden treasure. Along the way, he learns valuable lessons about following dreams, listening to the heart, and discovering one's true purpose.</p>
+            <br><button id="del-btn" onclick="Remove(event)">Delete</button>
+        </div>
+    </div>
+    <div><button class="add" >+</button></div>
+    <div class="overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+    <form class="form">
+        <input placeholder="Book Title" id="book-title" type="text">
+        <input placeholder="Book Author" id="book-author" type="text">
+        <textarea placeholder="Short Description" id="book-description"></textarea>
+        <button id="add-book" onclick="additional()">Add</button>
+        <button id="cancel-popup">Cancel</button>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
